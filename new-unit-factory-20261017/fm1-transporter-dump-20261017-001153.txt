@@ -1,0 +1,37 @@
+FM-1 flash analysis (fm1_transporter_recover 1.0.0)
+  dump     backups/new-unit-stock-v15-20261017/fm1-transporter-dump-20261017-001153.bin
+  sha256   bf6371a494c3f7313672a4b393ded14b101ad8be8a93f06768076c2e27aa6ebd   crc32 9250E2B6
+  package  V15        FM-1.fwsc  FM-1_015 = official M-VAVE V15 (sha256 verified)
+
+(a) Head 0x00000..0x03FFF (SPL; never written)
+  sha256 d9f43191777656de01c7bed4f9e9ba2e34e94832c5d2ed02c3fc7ab7a6d9bd67
+  head == V15
+
+(b) Application 0x04000..0x92FFF (143 sectors of 4 KiB)
+  0x04000..0x92FFF  143 sectors  other
+  no torn sector
+  erased sectors: 0
+  V15          0/143 sectors equal, last sector equal to V15: none
+
+(c) Staged update loader
+  area 0xE0000..0xE4EFF
+    outer header CRC   INVALID
+    length 0xFFFFFFFF (4294967295), name '����������������', flag 0xFF, dcrc 0xFFFF
+    body 0xE0020..0x1000E001E RUNS PAST the area
+    inner load address 0xFFFFFFFF
+    marker FELUCCA-LOADER-1 MISSING
+    trailing bytes     NOT erased
+    => loader DAMAGED: outer header CRC fails; header area 0xFFFFFFFF != 0xE0000; flag 0xFF != 0x41; body runs past 0xE4EFF; inner load address 0xFFFFFFFF != 0x01C0A800; marker FELUCCA-LOADER-1 missing
+
+(d) Update records (4K - 256 in 0x93000..0xFC000, magic 0x5441)
+  none
+
+(e) Device data 0x93000..0xFFFFF
+  erased 0x94000..0xE8FFF (85 sectors)
+  erased 0xF2000..0xF9FFF (8 sectors)
+  erased 0xFC000..0xFFFFF (4 sectors)
+
+(f) Verdict
+  no record
+  head == V15
+  no torn sector

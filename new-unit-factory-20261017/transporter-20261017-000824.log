@@ -1,0 +1,188 @@
+2026-10-17 00:08:24,654 DEBUG   fm1_transporter_recover 1.0.0, python 3.11.6, platform darwin, command 'dump'
+2026-10-17 00:08:24,654 DEBUG   args {'port': None, 'wait': 300.0, 'dry_run': False, 'mock_flash': None, 'mock_absent': False, 'mock_chip_key': None, 'log_dir': 'logs', 'command': 'dump', 'dir': 'backups/new-unit-stock-v15-20261017', 'package': [], 'v15': 'FM-1.fwsc'}
+2026-10-17 00:08:24,667 DEBUG   > ping
+2026-10-17 00:08:24,667 DEBUG   data port /dev/cu.usbmodem10334403 answers PONG
+2026-10-17 00:08:24,667 INFO    Transporter data port /dev/cu.usbmodem10334403
+2026-10-17 00:08:24,668 INFO    Reading the Transporter console /dev/cu.usbmodem10334401 in the background
+2026-10-17 00:08:24,668 DEBUG   > status
+2026-10-17 00:08:24,668 INFO    Waiting up to 300 s for the FM-1 (status) ...
+2026-10-17 00:08:24,671 DEBUG   console port /dev/cu.usbmodem10334401 open
+2026-10-17 00:08:24,876 DEBUG   console: n EP 02 with Size = 64
+2026-10-17 00:08:24,877 DEBUG   console: Allocated 128 bytes (0x501001C0)
+2026-10-17 00:08:24,877 DEBUG   console: Open EP 82 with Size = 64
+2026-10-17 00:08:24,877 DEBUG   console: Allocated 128 bytes (0x50100240)
+2026-10-17 00:08:24,877 DEBUG   console: Bind EP 81 to driver id 1
+2026-10-17 00:08:24,877 DEBUG   console: Bind EP 02 to driver id 1
+2026-10-17 00:08:24,877 DEBUG   console: Bind EP 82 to driver id 1
+2026-10-17 00:08:24,877 DEBUG   console: Open EP 83 with Size = 8
+2026-10-17 00:08:24,877 DEBUG   console: Allocated 64 bytes (0x501002C0)
+2026-10-17 00:08:24,877 DEBUG   console: Open EP 04 with Size = 64
+2026-10-17 00:08:24,877 DEBUG   console: Allocated 128 bytes (0x50100300)
+2026-10-17 00:08:24,877 DEBUG   console: Open EP 84 with Size = 64
+2026-10-17 00:08:24,877 DEBUG   console: Allocated 128 bytes (0x50100380)
+2026-10-17 00:08:24,877 DEBUG   console: Bind EP 83 to driver id 1
+2026-10-17 00:08:24,877 DEBUG   console: Bind EP 04 to driver id 1
+2026-10-17 00:08:24,877 DEBUG   console: Bind EP 84 to driver id 1
+2026-10-17 00:08:24,877 DEBUG   console: FM-1 Transporter
+2026-10-17 00:08:24,877 DEBUG   console: XIAO RP2040: D+=GP0/D6 D-=GP1/D7, PIO host on PIO1
+2026-10-17 00:08:24,877 DEBUG   console: If the FM-1 runs stock V15, leave it on: fm1t enters UBOOT via the soft key.
+2026-10-17 00:08:24,877 DEBUG   console: Otherwise switch it OFF, and ON again once the key is running.
+2026-10-17 00:08:24,877 DEBUG   console: [ 10200938 us] KEY: sending 0x16EF, polarity A (D+ clock, D- data). Switch the FM-1 ON now.
+2026-10-17 00:08:24,877 DEBUG   console: [ 10202142 us] data line probe responds (not proof of a target)
+2026-10-17 00:08:24,877 DEBUG   console: [ 12200934 us] KEY: 4081 packets
+2026-10-17 00:08:24,877 DEBUG   console: [ 14201186 us] KEY: 8163 packets
+2026-10-17 00:08:24,877 DEBUG   console: [ 16201412 us] KEY: 12245 packets
+2026-10-17 00:08:24,877 DEBUG   console: [ 18201636 us] KEY: 16327 packets
+2026-10-17 00:08:24,877 DEBUG   console: [ 20201860 us] KEY: 20409 packets
+2026-10-17 00:08:24,877 DEBUG   console: [ 22202084 us] KEY: 24491 packets
+2026-10-17 00:08:24,877 DEBUG   console: [ 24202310 us] KEY: 28573 packets
+2026-10-17 00:08:24,877 DEBUG   console: [ 26202534 us] KEY: 32655 packets
+2026-10-17 00:08:24,877 DEBUG   console: [ 28202758 us] KEY: 36737 packets
+2026-10-17 00:08:24,877 DEBUG   console: [ 30202984 us] KEY: 40819 packets
+2026-10-17 00:08:26,296 DEBUG   console: [ 32203253 us] KEY: 44901 packets
+2026-10-17 00:08:28,334 DEBUG   console: [ 34203524 us] KEY: 48983 packets
+2026-10-17 00:08:29,701 INFO      5 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:08:30,366 DEBUG   console: [ 36203767 us] KEY: 53065 packets
+2026-10-17 00:08:32,201 DEBUG   console: [ 38204004 us] KEY: 57147 packets
+2026-10-17 00:08:34,242 DEBUG   console: [ 40204235 us] KEY: 61229 packets
+2026-10-17 00:08:34,743 INFO      10 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:08:36,281 DEBUG   console: [ 42204471 us] KEY: 65311 packets
+2026-10-17 00:08:38,308 DEBUG   console: [ 44204710 us] KEY: 69393 packets
+2026-10-17 00:08:39,783 INFO      15 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:08:40,343 DEBUG   console: [ 46204941 us] KEY: 73475 packets
+2026-10-17 00:08:42,369 DEBUG   console: [ 48205177 us] KEY: 77557 packets
+2026-10-17 00:08:44,199 DEBUG   console: [ 50205414 us] KEY: 81639 packets
+2026-10-17 00:08:44,821 INFO      20 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:08:46,237 DEBUG   console: [ 52205649 us] KEY: 85721 packets
+2026-10-17 00:08:48,273 DEBUG   console: [ 54205883 us] KEY: 89803 packets
+2026-10-17 00:08:49,859 INFO      25 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:08:50,304 DEBUG   console: [ 56206118 us] KEY: 93885 packets
+2026-10-17 00:08:52,343 DEBUG   console: [ 58206349 us] KEY: 97967 packets
+2026-10-17 00:08:54,371 DEBUG   console: [ 60206586 us] KEY: 102049 packets
+2026-10-17 00:08:54,896 INFO      30 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:08:56,197 DEBUG   console: [ 62206827 us] KEY: 106131 packets
+2026-10-17 00:08:58,231 DEBUG   console: [ 64207068 us] KEY: 110213 packets
+2026-10-17 00:08:59,928 INFO      35 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:00,267 DEBUG   console: [ 66207303 us] KEY: 114295 packets
+2026-10-17 00:09:02,301 DEBUG   console: [ 68207541 us] KEY: 118377 packets
+2026-10-17 00:09:04,332 DEBUG   console: [ 70207775 us] KEY: 122459 packets
+2026-10-17 00:09:04,959 INFO      40 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:06,367 DEBUG   console: [ 72208016 us] KEY: 126541 packets
+2026-10-17 00:09:08,198 DEBUG   console: [ 74208257 us] KEY: 130623 packets
+2026-10-17 00:09:09,992 INFO      45 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:10,230 DEBUG   console: [ 76208492 us] KEY: 134705 packets
+2026-10-17 00:09:12,267 DEBUG   console: [ 78208729 us] KEY: 138787 packets
+2026-10-17 00:09:14,292 DEBUG   console: [ 80208963 us] KEY: 142869 packets
+2026-10-17 00:09:15,031 INFO      50 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:16,330 DEBUG   console: [ 82209202 us] KEY: 146951 packets
+2026-10-17 00:09:18,367 DEBUG   console: [ 84209439 us] KEY: 151033 packets
+2026-10-17 00:09:20,063 INFO      55 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:20,189 DEBUG   console: [ 86209673 us] KEY: 155115 packets
+2026-10-17 00:09:22,217 DEBUG   console: [ 88209908 us] KEY: 159197 packets
+2026-10-17 00:09:24,260 DEBUG   console: [ 90210143 us] KEY: 163279 packets
+2026-10-17 00:09:25,101 INFO      60 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:26,297 DEBUG   console: [ 92210377 us] KEY: 167361 packets
+2026-10-17 00:09:28,342 DEBUG   console: [ 94210613 us] KEY: 171443 packets
+2026-10-17 00:09:30,136 INFO      65 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:30,380 DEBUG   console: [ 96210852 us] KEY: 175525 packets
+2026-10-17 00:09:32,214 DEBUG   console: [ 98211087 us] KEY: 179607 packets
+2026-10-17 00:09:34,250 DEBUG   console: [100211323 us] KEY: 183689 packets
+2026-10-17 00:09:35,169 INFO      70 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:36,276 DEBUG   console: [102211561 us] KEY: 187771 packets
+2026-10-17 00:09:38,317 DEBUG   console: [104211802 us] KEY: 191853 packets
+2026-10-17 00:09:39,696 INFO      75 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:40,354 DEBUG   console: [106212042 us] KEY: 195935 packets
+2026-10-17 00:09:42,389 DEBUG   console: [108212282 us] KEY: 200017 packets
+2026-10-17 00:09:44,226 DEBUG   console: [110212523 us] KEY: 204099 packets
+2026-10-17 00:09:44,737 INFO      80 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:46,252 DEBUG   console: [112212759 us] KEY: 208181 packets
+2026-10-17 00:09:48,287 DEBUG   console: [114212993 us] KEY: 212263 packets
+2026-10-17 00:09:49,784 INFO      85 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:50,325 DEBUG   console: [116213230 us] KEY: 216345 packets
+2026-10-17 00:09:52,366 DEBUG   console: [118213466 us] KEY: 220427 packets
+2026-10-17 00:09:54,189 DEBUG   console: [120213703 us] KEY: 224509 packets
+2026-10-17 00:09:54,822 INFO      90 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:09:56,220 DEBUG   console: [122213935 us] KEY: 228591 packets
+2026-10-17 00:09:58,257 DEBUG   console: [124214171 us] KEY: 232673 packets
+2026-10-17 00:09:59,861 INFO      95 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:00,292 DEBUG   console: [126214405 us] KEY: 236755 packets
+2026-10-17 00:10:02,326 DEBUG   console: [128214645 us] KEY: 240837 packets
+2026-10-17 00:10:04,360 DEBUG   console: [130214882 us] KEY: 244919 packets
+2026-10-17 00:10:04,897 INFO      100 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:06,188 DEBUG   console: [132215119 us] KEY: 249001 packets
+2026-10-17 00:10:08,221 DEBUG   console: [134215357 us] KEY: 253083 packets
+2026-10-17 00:10:09,935 INFO      105 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:10,255 DEBUG   console: [136215596 us] KEY: 257165 packets
+2026-10-17 00:10:12,286 DEBUG   console: [138215834 us] KEY: 261247 packets
+2026-10-17 00:10:14,313 DEBUG   console: [140216072 us] KEY: 265329 packets
+2026-10-17 00:10:14,972 INFO      110 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:16,351 DEBUG   console: [142216310 us] KEY: 269411 packets
+2026-10-17 00:10:18,190 DEBUG   console: [144216553 us] KEY: 273493 packets
+2026-10-17 00:10:20,014 INFO      115 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:20,217 DEBUG   console: [146216785 us] KEY: 277575 packets
+2026-10-17 00:10:22,245 DEBUG   console: [148217023 us] KEY: 281657 packets
+2026-10-17 00:10:24,279 DEBUG   console: [150217262 us] KEY: 285739 packets
+2026-10-17 00:10:25,047 INFO      120 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:26,317 DEBUG   console: [152217498 us] KEY: 289821 packets
+2026-10-17 00:10:28,359 DEBUG   console: [154217731 us] KEY: 293903 packets
+2026-10-17 00:10:30,087 INFO      125 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:30,192 DEBUG   console: [156217966 us] KEY: 297985 packets
+2026-10-17 00:10:32,228 DEBUG   console: [158218205 us] KEY: 302067 packets
+2026-10-17 00:10:34,269 DEBUG   console: [160218444 us] KEY: 306149 packets
+2026-10-17 00:10:35,127 INFO      130 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:36,298 DEBUG   console: [162218681 us] KEY: 310231 packets
+2026-10-17 00:10:38,337 DEBUG   console: [164218916 us] KEY: 314313 packets
+2026-10-17 00:10:40,162 INFO      135 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:40,370 DEBUG   console: [166219150 us] KEY: 318395 packets
+2026-10-17 00:10:42,203 DEBUG   console: [168219386 us] KEY: 322477 packets
+2026-10-17 00:10:44,233 DEBUG   console: [170219621 us] KEY: 326559 packets
+2026-10-17 00:10:44,697 INFO      140 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:46,266 DEBUG   console: [172219856 us] KEY: 330641 packets
+2026-10-17 00:10:48,297 DEBUG   console: [174220096 us] KEY: 334723 packets
+2026-10-17 00:10:49,739 INFO      145 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:50,331 DEBUG   console: [176220331 us] KEY: 338805 packets
+2026-10-17 00:10:52,367 DEBUG   console: [178220569 us] KEY: 342887 packets
+2026-10-17 00:10:54,197 DEBUG   console: [180220808 us] KEY: 346969 packets
+2026-10-17 00:10:54,769 INFO      150 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:10:56,228 DEBUG   console: [182221043 us] KEY: 351051 packets
+2026-10-17 00:10:58,261 DEBUG   console: [184221281 us] KEY: 355133 packets
+2026-10-17 00:10:59,812 INFO      155 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:11:00,303 DEBUG   console: [186221515 us] KEY: 359215 packets
+2026-10-17 00:11:02,341 DEBUG   console: [188221752 us] KEY: 363297 packets
+2026-10-17 00:11:04,372 DEBUG   console: [190221986 us] KEY: 367379 packets
+2026-10-17 00:11:04,842 INFO      160 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:11:06,207 DEBUG   console: [192222224 us] KEY: 371461 packets
+2026-10-17 00:11:08,234 DEBUG   console: [194222461 us] KEY: 375543 packets
+2026-10-17 00:11:09,879 INFO      165 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:11:10,272 DEBUG   console: [196222694 us] KEY: 379625 packets
+2026-10-17 00:11:12,296 DEBUG   console: [198222934 us] KEY: 383707 packets
+2026-10-17 00:11:14,334 DEBUG   console: [200223172 us] KEY: 387789 packets
+2026-10-17 00:11:14,913 INFO      170 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:11:16,373 DEBUG   console: [202223411 us] KEY: 391871 packets
+2026-10-17 00:11:18,208 DEBUG   console: [204223648 us] KEY: 395953 packets
+2026-10-17 00:11:19,952 INFO      175 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:11:20,253 DEBUG   console: [206223889 us] KEY: 400035 packets
+2026-10-17 00:11:22,285 DEBUG   console: [208224122 us] KEY: 404117 packets
+2026-10-17 00:11:24,324 DEBUG   console: [210224363 us] KEY: 408199 packets
+2026-10-17 00:11:24,992 INFO      180 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:11:26,358 DEBUG   console: [212224601 us] KEY: 412281 packets
+2026-10-17 00:11:27,981 DEBUG   console: [213968500 us] ACK (data line held low) after 415840 packets
+2026-10-17 00:11:27,982 INFO      Transporter: [213968500 us] ACK (data line held low) after 415840 packets
+2026-10-17 00:11:27,982 DEBUG   console: [213970473 us] PULSE: D+ high (ROM pull-up), sending 4 us pulses every 1 ms
+2026-10-17 00:11:27,982 DEBUG   console: [213977944 us] PULSE: early D+ blip at 7.3 ms, ignored
+2026-10-17 00:11:30,018 INFO      185 s: the FM-1 has not answered the USB_KEY yet: switch it on now / check D+ D- GND / try rekey
+2026-10-17 00:11:33,945 DEBUG   < OK uboot=0 v15=0 loader=1 loader_running=0
+2026-10-17 00:11:33,945 INFO    Status      uboot=0 v15=0 loader=1 loader_running=0
+2026-10-17 00:11:33,946 ERROR   ERROR: the Transporter reports no UBOOT and no stock V15. Power-cycle the FM-1; if it has no working firmware run `rekey`, then switch the FM-1 off and on.
+2026-10-17 00:11:34,091 DEBUG   console: [219970648 us] PULSE: 6000 ms of pulses, D+=1 - handing off
+2026-10-17 00:11:34,091 INFO      Transporter: [219970648 us] PULSE: 6000 ms of pulses, D+=1 - handing off
+2026-10-17 00:11:34,091 DEBUG   console: USBH init on controller 1, speed = Full
+2026-10-17 00:11:34,091 DEBUG   console: sizeof(usbh_device_t) = 344
+2026-10-17 00:11:34,091 DEBUG   console: sizeof(hcd_event_t) = 12
+2026-10-17 00:11:34,091 DEBUG   console: sizeof(_ctrl_xfer) = 16
+2026-10-17 00:11:34,091 DEBUG   console: sizeof(tuh_xfer_t) = 24
+2026-10-17 00:11:34,091 DEBUG   console: sizeof(tu_fifo_t) = 20
+2026-10-17 00:11:34,091 DEBUG   console: sizeof(tu_edpt_stream_t) = 36
+2026-10-17 00:11:34,091 DEBUG   console: [219971678 us] HANDOFF: pulses stopped, PIO host started in 930 us
+2026-10-17 00:11:34,091 DEBUG   console: [1:] USBH Device Attach
+2026-10-17 00:11:34,093 INFO    Log: logs/transporter-20261017-000824.log
